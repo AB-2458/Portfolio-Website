@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva Bhosale</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="mediaqueries.css" /> -->
+</head>
+
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">Atharva Bhosale</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Atharva Bhosale</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/Atharva.png"
+                alt="Atharva">
+        </div>
+        <div style="display: block; padding-top: 28vh;">
+            <div class="section__text">
+                <p class="section__text__p1">Hello I'm</p>
+                <h1 class="title">Atharva Bhosale</h1>
+                <p class="section__text__p2">Head of App Development Team at SKNISB</p>
+            </div>
+            <div class="socials-container">
+                <img src="assets/linkedin.png"
+                    alt="linkedin" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/atharva-bhosale-0090a5205/'">
+
+                <img src="assets/instagram.png"
+                    alt="Instagram" class="icon" onclick="location.href='https://www.instagram.com/ab_2458/'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to Know more</p>
+        <h1 class="title">About Me</h1><br><br>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>- Hello, Everyone! I'm thrilled to introduce myself as a third-year computer engineering student
+                        who is not only passionate about technology but also has a diverse set of interests that fuel my
+                        personal and professional growth. <br><br>
+
+                        - I started my journey in SKNISB as a Volunteer who was willing to do as many tasks he could and
+                        get a good experience. After my volunteering experience I decided to join SKNISB as a member.
+                        <br><br>
+
+                        - In addition to my academic pursuits in computer engineering, I'm an avid reader who believes
+                        that books are a treasure trove of knowledge and inspiration. Whether it's diving into the
+                        latest tech trends or exploring the realms of literature, I'm committed to lifelong learning.
+
+                        <br><br>- Beyond the world of academia and reading, I'm an enthusiast for sports and physical
+                        fitness. Participating in sports has taught me valuable lessons in teamwork, discipline, and
+                        perseverance. I believe that a healthy body complements a sharp mind, and I strive to maintain a
+                        balanced lifestyle that includes regular physical activity.
+
+                        <br><br>- With a strong foundation in computer engineering, a thirst for knowledge from books,
+                        and the discipline instilled by sports, I'm on a mission to become a skilled software developer
+                        who can thrive in both the technical and personal aspects of the industry. <br><br>
+
+                        - As I progress through my academic journey and explore various facets of life, my goal is to
+                        connect with professionals who share my passion for technology, continuous learning, and a
+                        well-rounded approach to personal development. Let's network, learn from each other, and make
+                        meaningful contributions to the tech world! <br><br>
+
+                        - Feel free to connect with me on LinkedIn, and let's embark on this exciting journey together,
+                        celebrating not only our shared interests in technology but also the richness of life's
+                        experiences!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".menu-links");
+            const icon = document.querySelector(".hamburger-icon");
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
+        }
+    </script>
+</body>
+
+</html>
